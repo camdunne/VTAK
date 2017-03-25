@@ -345,7 +345,11 @@ h5.arch {
   font-size: 16px; }
 
 .display {
+  padding-top: 20px;
   padding-bottom: 20px; }
+
+.user {
+  padding-top: 50px; }
 
 .centered {
   margin-top: 20px; }

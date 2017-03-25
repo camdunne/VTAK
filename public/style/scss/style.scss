@@ -376,9 +376,12 @@ h5.arch {
   font-size: 16px;
 }
 .display {
+  padding-top: 20px;
   padding-bottom: 20px;
 }
-
+.user {
+  padding-top: 50px;
+}
 .centered {
   margin-top: 20px;
 }
@@ -386,7 +389,7 @@ h5.arch {
   margin: 0 auto;
   text-align: center;
   margin-bottom: 20px;
-  background-color: rgba(87,188,144, .3);
+  background-color: $marine_lite;
   width: 60%;
   border-radius: 15px;
   padding-bottom: 15px;
