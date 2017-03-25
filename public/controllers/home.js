@@ -1,5 +1,5 @@
 angular.module('sentimently.home',[])
-.controller('HomeController', ['$scope', '$http', 'tone', 'render', '$state', function ($scope,$http,tone,render,$state) {
+.controller('HomeController', function ($scope, $http, $state, $window, tone, render) {
 
   $scope.$state = $state;
   $scope.averageValues = {};
@@ -95,6 +95,7 @@ $scope.getSaved = function(archive) {
     $scope.bootup = false;
     $scope.showResults = true;
     render.renderData($scope.averageValues);
+    $window.scrollTo(0, 0);
   });
 };
 
@@ -141,4 +142,4 @@ $scope.submitTweet = function() {
   })
 }
 
-}]);
+});
